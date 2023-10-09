@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Cotizador de Seguros</title>
+</head>
+<body>
+    <h1>Cotizador de Seguros</h1>
+    <form id="insuranceForm">
+        <label for="age">Edad del asegurado:</label>
+        <input type="number" id="age" name="age" required><br><br>
+        
+        <label for="insuranceType">Tipo de seguro:</label>
+        <select id="insuranceType" name="insuranceType" required>
+            <option value="seleccione una opcion">Seleccione una opcion</option>
+            <option value="auto">Seguro de Auto</option>
+            <option value="vida">Seguro de Vida</option>
+            <option value="hogar">Seguro de Hogar</option>
+
+        </select><br><br>
+
+        <input type="submit" value="Calcular Cotización">
+    </form>
+
+    <h2>Resultado:</h2>
+    <p id="quoteResult"></p>
+
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
